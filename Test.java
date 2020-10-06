@@ -13,7 +13,7 @@ public class Test {
         /*System.out.println("请输入你需要读取文件的路径：");
         Scanner sc = new Scanner(System.in);
         sc.close();*/
-        str=read("C:\\Users\\asus\\Desktop\\wenben.txt");
+        str=read(args[0]);
         str=str.substring(1,str.length());
         int len=str.length();
         for(int i=0;i<len;i++){
@@ -73,8 +73,8 @@ public class Test {
                 break;
             }
         }
-        out=out.substring(1,out.length());
-        write("C:\\Users\\asus\\Desktop\\out.txt");
+        /*out=out.substring(1,out.length());
+        write("C:\\Users\\asus\\Desktop\\out.txt");*/
     }
     private static String read(String file) {
         FileInputStream fis = null;
